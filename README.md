@@ -15,3 +15,15 @@
 ## wav to gsm
 
 > sox input.wav -r 8000 output.gsm resample -q1
+
+
+## bulk
+
+`````bash
+#!/bin/bash
+# converts .mp3 files in current directory into .sln Asterisk 16-bit signed linear audio
+
+for f in *.mp3; do
+    lame --decode $f - | sox -v 0.5 -t wav - -t wav -b 16 -r 8000 -c 1 $(basename -s .mp3 $f).wav
+done
+`````
