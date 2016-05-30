@@ -26,3 +26,7 @@ for f in *.mp3; do
     lame --decode $f - | sox -v 0.5 -t wav - -t wav -b 16 -r 8000 -c 1 $(basename -s .mp3 $f).wav
 done
 `````
+
+## wav to g722
+
+http://wiki.innovaphone.com/index.php?title=Howto:Convert_wave_files_in_to_G722_coder_files
