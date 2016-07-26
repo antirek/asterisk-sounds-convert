@@ -30,3 +30,12 @@ done
 ## wav to g722
 
 http://wiki.innovaphone.com/index.php?title=Howto:Convert_wave_files_in_to_G722_coder_files
+
+
+## wav to opus
+
+/usr/bin/ffmpeg -i sound.wav -acodec libopus -ar 8000 -ab 8000 sound.ogg 
+
+## opus to wav 
+
+opusdec --force-wav sound.ogg sound.wav
