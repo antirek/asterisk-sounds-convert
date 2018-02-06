@@ -14,7 +14,7 @@
 
 ## wav to gsm
 
-> sox input.wav -r 8000 output.gsm resample -q1
+> sox input.wav -r 8000 -c 1 -t gsm output.gsm
 
 
 ## bulk
