@@ -39,3 +39,12 @@ http://wiki.innovaphone.com/index.php?title=Howto:Convert_wave_files_in_to_G722_
 ## opus to wav 
 
 opusdec --force-wav sound.ogg sound.wav
+
+## wav repair
+
+> sox -t raw -r 8000 -b 16 -c 1 -L -e signed-integer broken.wav fixed.wav
+
+`````
+when record to wav was broken
+`````
+
