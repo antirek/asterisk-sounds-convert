@@ -48,3 +48,6 @@ opusdec --force-wav sound.ogg sound.wav
 when record to wav was broken
 `````
 
+## amr to mp3
+'ffmpeg -i input.amr -ar 12000 output.mp3
+
