@@ -69,3 +69,7 @@ when record to wav was broken
 
 > ffmpeg -i input.amr -ar 12000 output.mp3
 
+### wav to ulaw/alaw
+
+> sox -V vm-intro.wav -r 8000 -c 1 -t ul vm-intro.ulaw
+> sox -V vm-intro.wav -r 8000 -c 1 -t al vm-intro.alaw
