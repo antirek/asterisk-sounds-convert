@@ -74,4 +74,5 @@ when record to wav was broken
 ### wav to ulaw/alaw
 
 > sox -V vm-intro.wav -r 8000 -c 1 -t ul vm-intro.ulaw
+
 > sox -V vm-intro.wav -r 8000 -c 1 -t al vm-intro.alaw
