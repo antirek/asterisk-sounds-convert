@@ -45,6 +45,8 @@ done
 
 ## wav to g722
 
+> ffmpeg -i vm-intro.wav -ar 16000 -acodec g722 vm-intro.g722
+
 http://wiki.innovaphone.com/index.php?title=Howto:Convert_wave_files_in_to_G722_coder_files
 
 
